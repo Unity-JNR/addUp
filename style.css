@@ -1,0 +1,54 @@
+body{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    color: black;
+}
+
+/* Default styles for all devices */
+.container{
+    text-align: right;
+}
+
+.add{
+    box-shadow: 0 0 20px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Dark Pink Text Color */
+    font-weight: bolder;
+    font-size: large;
+  }
+
+button[data-add] {
+    background-color: black;
+    color: yellow;
+}
+
+/* Media queries for different devices */
+@media only screen and (max-width: 768px) {
+    /* Styles for devices with a maximum width of 768 pixels */
+    .container {
+        background-color: yellow;
+    }
+
+    .add {
+        background-color: white;
+        color: black;
+    }
+
+    button[data-add] {
+        background-color: black;
+        color: yellow;
+    }
+}
